@@ -28,6 +28,8 @@ namespace WebDataHandler.Services
                 // reference by actual value
                 property.PropertyType = titles[1];
 
+                property.Url = url;
+
                 // obviously if there were going to be numerous properties I would refactor this
                 // so as not to repeat code
                 string bathrooms = titles.First(s => s.ToLower().Contains("bath"));

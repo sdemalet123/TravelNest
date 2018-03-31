@@ -7,6 +7,7 @@ namespace WebDataHandler.Models
 {
     public class Property
     {
+        public string Url { get; set; }
         public int Guests { get; set; }
         public int Beds { get; set; }
         public int Bathrooms { get; set; }

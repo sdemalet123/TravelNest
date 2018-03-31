@@ -14,7 +14,7 @@ namespace WebDataHandler.Controllers
             _webDataService = webDataService;
         }
 
-        [HttpPost]
+        [HttpGet]
         public Property GetPropertyData(string url)
         {
             var data = _webDataService.GetWebData(url);
