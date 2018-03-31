@@ -1,0 +1,63 @@
+<div class = "container">
+  <form [formGroup] = "propertyForm" novalidate>
+         <div class="card">
+              <div class="card-header">Property details:</div>
+              <div class="card-body">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="propertyurl">Property Url</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text"  class="form-control propertyurl" formControlName="propertyurl">
+                        </div>
+                    </div>
+                </div>
+                        <!-- property type -->
+                  <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-6">
+                            <label for="propertytype">Property Type</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text"  class="form-control propertytype" formControlName="propertytype">
+                        </div>
+                    </div>
+                  </div>
+                  <!-- Number of guests -->
+                  <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="nobeds">Number of Guests</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" formControlName = "noguests">
+                        </div>
+                    </div>
+                  </div>
+                   <!-- Number of bathrooms -->
+                  <div class="form-group">
+                    <div class="row">
+                         <div class="col-sm-6">
+                            <label for="nobathrooms">Number of Bathrooms</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" formControlName = "nobathrooms">
+                        </div>
+                   </div>
+                </div>
+                  <!-- Number of beds -->
+                  <div class="form-group">
+                    <div class="row">
+                            <div class="col-sm-6">
+                        <label for="nobeds">Number of Beds</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" formControlName = "nobeds">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
