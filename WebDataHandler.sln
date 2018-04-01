@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDataHandler", "WebDataHandler\WebDataHandler.csproj", "{86A5C251-CE33-4A14-8C06-C9D1FF025B67}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHandlerTests", "WebHandlerTests\WebHandlerTests.csproj", "{91C3303F-0C3F-4D7E-B3A4-2F4715A3B8F6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{86A5C251-CE33-4A14-8C06-C9D1FF025B67} = {86A5C251-CE33-4A14-8C06-C9D1FF025B67}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{86A5C251-CE33-4A14-8C06-C9D1FF025B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86A5C251-CE33-4A14-8C06-C9D1FF025B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86A5C251-CE33-4A14-8C06-C9D1FF025B67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C3303F-0C3F-4D7E-B3A4-2F4715A3B8F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C3303F-0C3F-4D7E-B3A4-2F4715A3B8F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C3303F-0C3F-4D7E-B3A4-2F4715A3B8F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C3303F-0C3F-4D7E-B3A4-2F4715A3B8F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
