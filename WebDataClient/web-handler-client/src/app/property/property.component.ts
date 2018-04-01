@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
-import { Property } from '../Model/property';
+import { Property } from '../model/property';
 
 @Component({
   selector: 'app-property',
@@ -17,11 +17,11 @@ export class PropertyComponent implements OnInit {
 
   ngOnInit() {
     this.propertyForm = this.formBuilder.group({
-      upropertyurl: '',
-      propertytype: '',
-      nobeds: 0,
-      nobathrooms: 0,
-      noguests: 0
+      Url: '',
+      PropertyType: '',
+      Beds: 0,
+      Bathrooms: 0,
+      Guests: 0
     })
   }
 }

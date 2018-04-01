@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PropertyListComponent } from './property-list/property-list.component';
 import { ApiServiceService} from './api-service.service'
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { ApiServiceService} from './api-service.service'
     BrowserModule,
     HttpModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule
   ],
   providers: [ApiServiceService],

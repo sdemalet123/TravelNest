@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Property } from '../Model/property';
+import { Property } from '../model/property';
 
 @Component({
   selector: 'app-property-list',
@@ -8,7 +8,7 @@ import { Property } from '../Model/property';
 })
 export class PropertyListComponent implements OnInit {
 
-  @Input() properties: Array<Property>;
+  @Input() properties: Property[];
 
   constructor() { }
 
