@@ -12,12 +12,12 @@ namespace WebDataHandler
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-            // Web API configuration and services
-            IUnityContainer container = new UnityContainer();
+             IUnityContainer container = new UnityContainer();
             container.RegisterType<IWebDataService, WebDataService>();
             config.DependencyResolver = new App_Start.UnityResolver(container);
+            config.EnableCors();
 
-             // Web API routes
+            // Web API routes
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(

@@ -1,10 +1,12 @@
 ﻿using System.Web.Http;
 using WebDataHandler.Models;
 using WebDataHandler.Services;
+using System.Web.Http.Cors;
 
 namespace WebDataHandler.Controllers
 {
     [RoutePrefix("api")]
+    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
     public class WebDataController : ApiController
     {
         private IWebDataService _webDataService;
